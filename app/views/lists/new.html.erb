@@ -1,0 +1,10 @@
+<div class=container>
+<h3>Add new List</h3>
+<%= simple_form_for [ @bookmark, @list ] do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "Enter Listname", class: "btn btn-primary" %>
+<% end %>
+</div>
+<div class=container>
+  <%= link_to "Homescreen", lists_path %>
+</div>
