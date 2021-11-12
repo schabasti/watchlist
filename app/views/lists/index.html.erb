@@ -6,10 +6,14 @@
       <% end %>
     </ul>
 
+    <%= cl_image_tag("q5i2zoci1vq7lsv9th59",
+      width: 400, height: 300, crop: :fill) %>
+    <%= cl_image_tag("l5wkhzlbbmfamdkolzwf",
+      width: 400, height: 300, crop: :fill) %>
     <div class=container>
       <%= link_to "Add new List", new_list_path(@list) %>
     </div>
-        <div class=container>
+    <%# <%# <div class=container>
       <%= link_to "Add new Bookmark", new_list_bookmark_path(@list_id.bookmark) %>
-    </div>
+    </div> %>
 </div>
